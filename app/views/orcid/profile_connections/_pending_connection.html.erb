@@ -3,7 +3,7 @@
     'orcid.views.pending_connection',
     orcid_profile_url: Orcid.url_for_orcid_id(pending_connection.orcid_profile_id),
     orcid_profile_id: pending_connection.orcid_profile_id,
-    application_orcid_authorization_href: user_omniauth_authorize_path(provider: 'orcid'),
+    application_orcid_authorization_href: user_orcid_omniauth_authorize_path,
     application_orcid_authorization_text: 'sign into this application'
   ).html_safe
   %>

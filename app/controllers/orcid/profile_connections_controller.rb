@@ -69,7 +69,7 @@ module Orcid
       return false unless orcid_profile
       return false if orcid_profile.verified_authentication?
 
-      redirect_to user_omniauth_authorize_url('orcid')
+      redirect_to user_orcid_omniauth_authorize_url
     end
 
     def redirecting_because_user_has_verified_their_connected_profile

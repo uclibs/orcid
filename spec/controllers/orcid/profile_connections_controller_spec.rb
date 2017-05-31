@@ -49,7 +49,7 @@ module Orcid
         Orcid.stub(:profile_for).with(user).and_return(orcid_profile)
 
         get :index, use_route: :orcid
-        expect(response).to redirect_to(user_omniauth_authorize_url("orcid"))
+        expect(response).to redirect_to(user_orcid_omniauth_authorize_url)
         expect(orcid_profile).to have_received(:verified_authentication?)
       end
 

@@ -30,10 +30,10 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(/^(test|spec|features)\//)
   s.require_paths = ['lib']
 
-  s.add_dependency 'nokogiri', '1.6.8'
-  s.add_dependency 'railties', '~> 4.0'
+  s.add_dependency 'nokogiri', '1.7.2'
+  s.add_dependency 'railties', '5.0.3'
   s.add_dependency 'figaro'
-  s.add_dependency 'devise-multi_auth', '~> 0.1'
+#  s.add_dependency 'devise-multi_auth', '~> 0.1'
   s.add_dependency 'omniauth-orcid', '0.6'
   s.add_dependency 'mappy'
   s.add_dependency 'virtus'
@@ -44,10 +44,10 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'engine_cart'
-  s.add_development_dependency 'rspec-rails', '~> 2.99'
+  s.add_development_dependency 'rspec-rails', '~> 3.6.0'
   s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'factory_girl'
-  s.add_development_dependency 'rspec-html-matchers', '~> 0.5.0'
+  s.add_development_dependency 'rspec-html-matchers' # , '~> 0.5.0'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'capybara-webkit'
   s.add_development_dependency 'headless'
@@ -55,11 +55,11 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'rest_client'
   s.add_development_dependency 'rspec-given'
-  s.add_development_dependency 'rspec', '~>2.99'
-  s.add_development_dependency 'rspec-mocks', '~>2.99'
-  s.add_development_dependency 'rspec-core', '~>2.99'
-  s.add_development_dependency 'rspec-expectations', '~>2.99'
+  s.add_development_dependency 'rspec', '~>3.6.0'
+  s.add_development_dependency 'rspec-mocks', '~>3.6.0'
+  s.add_development_dependency 'rspec-core', '~>3.6.0'
+  s.add_development_dependency 'rspec-expectations', '~>3.6.0'
   s.add_development_dependency 'rspec-its'
   s.add_development_dependency 'rspec-activemodel-mocks'
-  s.add_development_dependency 'rake', '11.2.2'
+#  s.add_development_dependency 'rake', '11.2.2'
 end

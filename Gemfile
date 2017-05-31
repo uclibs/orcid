@@ -17,3 +17,6 @@ gem 'execjs'
 gem 'therubyracer', platforms: :ruby
 gem 'byebug', require: false
 
+gem 'devise-multi_auth', github: 'uclibs/devise-multi_auth', branch: 'rails-5'
+gem 'rails-controller-testing'
+gem 'rspec-html-matchers'

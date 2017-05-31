@@ -13,12 +13,12 @@ module Orcid
            "client_secret" => ENV['ORCID_APP_SECRET'],
            "grant_type" => "authorization_code",
            "code" => params[:code],
-           "redirect_uri" => config.application_root_url ) 
+           "redirect_uri" => config.application_root_url )
       response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: uri.scheme == "https") do |http|
         http.request(request)
       end
 
-      redirect_to(user_omniauth_authorize_path(:orcid))
+      redirect_to(user_orcid_omniauth_authorize_path)
     end
   end
 end

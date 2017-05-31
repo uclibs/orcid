@@ -1,5 +1,5 @@
 require 'spec_helper'
- 
+
 module Orcid
   describe CreateProfileController do
 
@@ -13,7 +13,7 @@ module Orcid
         to_return(:status => 200, :body => "", :headers => {})
 
         post :create, use_route: :orcid
-        expect(response).to redirect_to(user_omniauth_authorize_path(:orcid))
+        expect(response).to redirect_to(user_orcid_omniauth_authorize_path)
       end
     end
   end
