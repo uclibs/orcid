@@ -30,10 +30,10 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(/^(test|spec|features)\//)
   s.require_paths = ['lib']
 
-  s.add_dependency 'nokogiri', '1.7.2'
+  s.add_dependency 'nokogiri'
   s.add_dependency 'railties', '5.0.3'
   s.add_dependency 'figaro'
-#  s.add_dependency 'devise-multi_auth', '~> 0.1'
+  #s.add_dependency 'devise-multi_auth', '~> 0.1'
   s.add_dependency 'omniauth-orcid', '0.6'
   s.add_dependency 'mappy'
   s.add_dependency 'virtus'
@@ -53,7 +53,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'headless'
   s.add_development_dependency 'webmock'
   s.add_development_dependency 'simplecov'
-  s.add_development_dependency 'rest_client'
+  s.add_development_dependency 'rest-client'
   s.add_development_dependency 'rspec-given'
   s.add_development_dependency 'rspec', '~>3.6.0'
   s.add_development_dependency 'rspec-mocks', '~>3.6.0'
