@@ -2,7 +2,7 @@ require 'net/http'
 module Orcid
   class CreateProfileController < Orcid::ApplicationController
     respond_to :html
-    before_filter :authenticate_user!
+    before_action :authenticate_user!
 
     def create
       uri = URI.parse(Orcid.provider.token_url)

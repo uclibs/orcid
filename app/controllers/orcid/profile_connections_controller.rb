@@ -6,7 +6,7 @@ module Orcid
   # Orcid::ProfileStatus is encapsulated in that class.
   class ProfileConnectionsController < Orcid::ApplicationController
     respond_to :html
-    before_filter :authenticate_user!
+    before_action :authenticate_user!
 
     def index
       redirecting_because_user_does_not_have_a_connected_orcid_profile ||
