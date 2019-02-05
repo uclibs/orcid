@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_dependency 'nokogiri'
-  s.add_dependency 'railties', '5.1.4'
+  s.add_dependency 'railties', '5.1.6.1'
   s.add_dependency 'figaro'
   #s.add_dependency 'devise-multi_auth'
   s.add_dependency 'omniauth-orcid', '0.6'
